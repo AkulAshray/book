@@ -1,0 +1,33 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+# - url: multiverse.io
+#   title: DF Technical Guide
+- file: intro
+  title: Introduction
+
+- part: Frontmatter
+  chapters:
+    - file: preface
+    - file: prereqs
+    - file: notation
+
+- part: The Data Science Lifecycle
+  numbered: true
+  chapters:
+    - file: Chapters/01/Workflow_intro
+      sections:
+        - file: Chapters/01/workflow_1
+        - file: Chapters/01/workflow_2
+        - file: Chapters/01/workflow_3
+
+    - file: Chapters/02/design_intro
+    - file: Chapters/03/cycle_case_study
+
+- part: The Data Visulalization
+  numbered: true
+  chapters:
+    - file: Chapters/04/plotly
+      
+   
+
+
