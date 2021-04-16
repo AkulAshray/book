@@ -33,7 +33,7 @@ launch_buttons:
 
 html:
   favicon: multi-logo.png
-  navbar_footer_text: Visit our <a href="https://github.com/Ashray-shetty/book">GitHub
+  navbar_footer_text: Visit our <a href="https://github.com/MultiverseDF/book">GitHub
     Repository</a>
 
   use_repository_button: true       
@@ -41,7 +41,7 @@ html:
 
 
 repository:
-  url: https://github.com/Ashray-shetty/book                         
+  url: https://github.com/MultiverseDF/book                         
   path_to_book: .                  
   branch: main
 
