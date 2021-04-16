@@ -36,8 +36,8 @@ html:
   navbar_footer_text: Visit our <a href="https://github.com/MultiverseDF/book">GitHub
     Repository</a>
 
-  use_repository_button: true       
-  use_issues_button: true           
+  use_repository_button: false       
+  use_issues_button: false           
 
 
 repository:
