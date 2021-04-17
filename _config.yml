@@ -1,6 +1,6 @@
-title: DF Technical Guide
-author: Tech Upskilling team
-copyright: Multiverse 2021
+title: Data Techbook
+author: Data Coaches
+copyright: Multiverse, 2021
 logo: logo.png
 
 execute:
@@ -33,15 +33,15 @@ launch_buttons:
 
 html:
   favicon: multi-logo.png
-  navbar_footer_text: Visit our <a href="https://github.com/MultiverseDF/book">GitHub
-    Repository</a>
+  navbar_footer_text: Visit our <a href="https://www.multiverse.io/en-GB">main
+    website</a>
 
   use_repository_button: false       
   use_issues_button: false           
 
 
 repository:
-  url: https://github.com/MultiverseDF/book                         
+  url: https://github.com/DataFellowship/book                        
   path_to_book: .                  
   branch: main
 
