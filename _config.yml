@@ -41,7 +41,7 @@ html:
 
 
 repository:
-  url: https://github.com/MultiverseDF/book                      
+  url: https://github.com/DataFellowship/book                     
   path_to_book: .                  
-  branch: main
+  branch: master
 
