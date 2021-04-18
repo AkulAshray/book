@@ -19,6 +19,7 @@
       sections:
         - file: Chapters/01/workflow_1
         - file: Chapters/01/workflow_2
+        - file: Chapters/01/workflow_3
 
     - file: Chapters/02/Sequence Type and Methods
       sections:
