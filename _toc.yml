@@ -1,32 +1,52 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 # - url: multiverse.io
-#   title: Data Techbook
+#   title: Data TechBook
 - file: intro
   title: Introduction
+
 
 - part: Frontmatter
   chapters:
     - file: preface
-    - file: prereqs
-    - file: notation
+    - file: Request changes
+    - file: Python editor
 
-- part: The Data Science Lifecycle
+- part: Programming using Python
   numbered: true
   chapters:
     - file: Chapters/01/Workflow_intro
       sections:
         - file: Chapters/01/workflow_1
         - file: Chapters/01/workflow_2
-        - file: Chapters/01/workflow_3
 
-    - file: Chapters/02/design_intro
-    - file: Chapters/03/cycle_case_study
+    - file: Chapters/02/Sequence Type and Methods
+      sections:
+        - file: Chapters/02/Strings
+        - file: Chapters/02/Lists and Tuples
+        - file: Chapters/02/Mutability
+        - file: chapters/02/Dictionaries and Sets
+        
+    - file: Chapters/03/Functions and Loops
+      sections:
+       - file: Chapters/03/Loops in Python
+       - file: Chapters/03/Functions
+       - file: Chapters/03/Error Handling
+       - file: Chapter/03/Modules and Files
 
-- part: The Data Visulalization
+    - file: Chapters/04/Introduction to NumPy
+      sections:
+       - file: Chapters/04/What are Arrays
+       - file: Chapters/04/Useful NumPy Functions
+
+- part: Working with Rectangular Data
   numbered: true
   chapters:
-    - file: Chapters/04/plotly
+    - file: Chapters/05/Introduction to Pandas
+
+    - file: Chapters/06/EDA using Pandas
+
+    - file: Chapters/07/Relational Databases and SQL
       
    
 

@@ -1,17 +1,22 @@
 # Basic Python Data Types
 
-One of the most basic feature of `Python` is that it is a **object-oriented programming language**, and everything inside `Python` is an **object**. When we write programs, we essentially specify a set of actions to perform that manipuates the **object** in some capacity. Sometimes we even call the object as `value`, and each value is a piece of data that a computer program works with such as a number or text. There are different **types** of values: `42` is an integer and `"Hello!"` is a string. 
+One of the most basic feature of `Python` is that it is a [**Object-oriented programming language**](https://en.wikipedia.org/wiki/Object-oriented_programming), which means everything inside `Python` is an **object**. When we write programs, we essentially specify a set of actions to perform that manipuates the **object** in some capacity. Sometimes we even call the object as `value`, and each value is a piece of data that a computer program works with such as a number or text. There are different **types** of values: `42` is an integer and `"Hello!"` is a string. 
 
-A **variable** is a name that refers to a value, it gives us a way to associate names with objects. In mathematics and statistics, we usually use variable names like $x$ and $y$. In Python, we can use any word as a variable name as long as it starts with a letter or an underscore. However, it should not be a [reserved word](https://docs.python.org/3.3/reference/lexical_analysis.html#keywords) in Python such as `for`, `while`, `class`, `lambda`, etc. as these words encode special functionality in Python that we don't want to overwrite!
+A **variable** is a just name that refers to a value, it gives us a way to associate names with objects. In mathematics and statistics, we usually use variable names like $x$ and $y$. In Python, we can use any word as a variable name as long as it starts with a letter or an underscore. However, it should not be a [reserved word](https://docs.python.org/3.3/reference/lexical_analysis.html#keywords) in Python such as `for`, `while`, `class`, `lambda`, etc. as these words encode special functionality in Python that we don't want to overwrite!
 
-It can be helpful to think of a variable as a box that holds some information (a single number, a vector, a string, etc). We use the **assignment operator** `=` to assign a value to a variable.
+```{admonition} Remember
+An object can have have one, more than one, or no name assocaited with it.
+```
+It can be helpful to think of a variable as a box that holds some information (a single number, a vector, a string, etc). We use the **assignment operator** `=` to assign a value to a variable. An [assignment statement](https://en.wikipedia.org/wiki/Assignment_(computer_science)) associates the name to the left of the `=` symbol with the object denoted by the expression to the right of the `=` symbol. 
 
 ![](box.png)
 
 Image taken from: [medium.com](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40stevenpcurtis.sc%2Fwhat-is-a-variable-3447ac1331b9&psig=AOvVaw3YbYfgb7XFOJ_sHP5eliob&ust=1595365663851000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCMi8nrfe3OoCFQAAAAAdAAAAABAZ)
 
+Although we mentioned that a variable is just a name, its not that simple. Programming languages let us describe computations so that computers can execute them, but this does not mean only computers have to read programs. It's often best to write programs that are easy to read and an apt choice of variable names plays an important role in enhancing readability. You can read more about them [here](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be)
+
 ```{tip}
-See the [Python 3 documentation](https://docs.python.org/3/library/stdtypes.html) for a summary of the standard built-in Python datatypes. In later chapters we will see how to create our own objects.
+See the [Python 3 documentation](https://docs.python.org/3/library/stdtypes.html) for a summary of the standard built-in Python datatypes. In later chapters we will look into all of them as we use them to build simple programs.
 ```
 
 ## Common built-in Python data types
@@ -21,10 +26,10 @@ See the [Python 3 documentation](https://docs.python.org/3/library/stdtypes.html
 | integer               | `int`      | Numeric Type   | positive/negative whole numbers               | `42`                                       |
 | floating point number | `float`    | Numeric Type   | real number in decimal form                   | `3.14159`                                  |
 | boolean               | `bool`     | Boolean Values | true or false                                 | `True`                                     |
-| string                | `str`      | Sequence Type  | text                                          | `"I Can Has Cheezburger?"`                 |
-| list                  | `list`     | Sequence Type  | a collection of objects - mutable & ordered   | `['Ali', 'Xinyi', 'Miriam']`               |
-| tuple                 | `tuple`    | Sequence Type  | a collection of objects - immutable & ordered | `('Thursday', 6, 9, 2018)`                 |
-| dictionary            | `dict`     | Mapping Type   | mapping of key-value pairs                    | `{'name':'DSCI', 'code':511, 'credits':2}` |
+| string                | `str`      | Sequence Type  | text                                          | `"I Can Have KFC?"`                 |
+| list                  | `list`     | Sequence Type  | a collection of objects - mutable & ordered   | `['Ali', 'Sophia', 'Meghan']`               |
+| tuple                 | `tuple`    | Sequence Type  | a collection of objects - immutable & ordered | `('Thursday', 14, 4, 2021)`                 |
+| dictionary            | `dict`     | Mapping Type   | mapping of key-value pairs                    | `{'name':'Harry', 'code':007, 'credits':9}` |
 | none                  | `NoneType` | Null Object    | represents no value                           | `None`                                     |
 
 ### Numeric data types
@@ -36,10 +41,10 @@ Let's create a variable named x that stores the integer 7, which is the variable
 x = 7
 type(x)
 
-The snippet **x=2** is a `statement`. Each statement specifies a task to perform. The preceding statement creates **x** and uses the `assignment symbol` **(=)** to give **x** a value. The entire statement is an assignment variable that we read as "x is assigned the value 7". The following statement creates a variable y and assigns to it the value 42. We will even use the print() function to see what its value is:
+The snippet **x=7** is a `statement`. Each statement specifies a task to perform. The preceding statement creates **x** and uses the `assignment symbol` **(=)** to give **x** a value. The entire statement is an assignment variable that we read as "x is assigned the value 7". The following statement creates a variable y and assigns to it the value 42. We will even use the print() function to see what its value is:
 
 y = 42
-print(x)
+print(y)
 
 In Jupyter/IPython (an interactive version of Python, based on which this book was written), the last line of a cell will automatically return as an output and so we don't actually need to explicitly state `print()`.
 
