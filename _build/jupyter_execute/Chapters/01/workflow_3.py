@@ -1,3 +1,11 @@
+# What's in a Name?
+
+So far, we have asked a broad question about our data: "Do the first names of students tell us anything about the class?"
+
+We have cleaned our data by converting all our names to lowercase. During our exploratory data analysis we discovered that our class contains about 270 names of students in the class and on the waitlist. Most of our first names are between 4 and 8 characters long.
+
+What else can we discover about our class based on their first names? We might consider a single name from our dataset:
+
 # Reference: https://jupyterbook.org/interactive/hiding.html
 # Use {hide, remove}-{input, output, cell} tags to hiding content
 
@@ -26,14 +34,6 @@ def display_df(df, rows=pd.options.display.max_rows,
 
 students = pd.read_csv('students.csv')
 students['Name'] = students['Name'].str.lower()
-
-# What's in a Name?
-
-So far, we have asked a broad question about our data: "Do the first names of students tell us anything about the class?"
-
-We have cleaned our data by converting all our names to lowercase. During our exploratory data analysis we discovered that our class contains about 270 names of students in the class and on the waitlist. Most of our first names are between 4 and 8 characters long.
-
-What else can we discover about our class based on their first names? We might consider a single name from our dataset:
 
 students['Name'][5]
 

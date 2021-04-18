@@ -1,25 +1,25 @@
-# Foundations of Data Science
+# Data Techbook
 
-**By Multiverse Data Fellowship Team**
+**By Greg Simon, Harry Gulliver, Eduardo Salazar, Ashray Shetty**
 
 This is the start of a book for Data Science Intensive (DSI) Bootcamp provided as part of Level 4 Data Analyst Apprenticeship at Multiverse. 
 
 DSI prepares you for real world data analysis. In theory, drawing conclusions from data is simple - load a data table, make a plot, and fit a model. In reality however, its not that simple. Data is messy and individual circumstances and business use cases vary, which means thats the work of a data scientist is not just restricited to learning new skills but figuring out how to apply them in different circumstances. This book attempts to address this issue, but providing a collection of tutorials and real life examples in an interactive environment to allow readers to test out their learning.
 
-Here are some of the objectives we cover:
+Here are some of the objectives we cover are essential concepts of:
 
-* **Learn essential concepts of statistics and probability**
+* **Statistics and Probability**
 
-* **Learn essential concepts of software and computing**
+* **Software and Computing**
 
-* **Learn essential concepts of Machine Learning**
+* **Machine Learning**
 
-* **Learn essential concepts of data science**
+* **Data Science**
 
-* **Learn essential concepts to apply data science for different contexts**
+* **Apply data science for different contexts**
 
-* **Covers case studies of real world apprentices and their application**
+* **Covers case studies and applications**
 
-```{warning} Please note that the class website is under active development, and content will be added throughout the duration of the course.
+```{warning} Please note that this website is under active development, and content will be added throughout the duration of the course.
 ```
 

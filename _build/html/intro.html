@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundations of Data Science &#8212; Foundations of Data Science</title>
+    <title>Data Techbook &#8212; Data Techbook</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -31,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -44,15 +45,17 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="_static/multi-logo.png"/>
@@ -80,7 +83,7 @@
   <img src="_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Foundations of Data Science</h1>
+  <h1 class="site-logo" id="site-title">Data Techbook</h1>
   
 </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -91,7 +94,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="reference internal" href="#">
-   Foundations of Data Science
+   Data Techbook
   </a>
  </li>
 </ul>
@@ -125,17 +128,17 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="Chapters/01/Workflow_intro.html">
-   1. The Data Science Workflow
+   1. Introduction to Python
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/01/workflow_1.html">
-     1.1. Getting started
+     1.1. Basic Python Data Types
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/01/workflow_2.html">
-     1.2. Exploratory Data Analysis
+     1.2. Branching Programs
     </a>
    </li>
    <li class="toctree-l2">
@@ -158,11 +161,23 @@
   </a>
  </li>
 </ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  The Data Visulalization
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Chapters/04/plotly.html">
+   1. Exploring Data Using Plotly Express and Graph Objects
+  </a>
+ </li>
+</ul>
 
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Visit our <a href="https://github.com/Ashray-shetty/book">GitHub Repository</a><div> This book is powered by <a href="https://jupyterbook.org">Jupyter Book</a></div>
+  Visit our <a href="https://www.multiverse.io/en-GB">main website</a>
 </div>
 
 </div>
@@ -208,22 +223,6 @@
 
             <!-- Source interaction buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/Ashray-shetty/book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/Ashray-shetty/book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
 
             <!-- Full screen (wrap in <a> to have style consistency -->
             <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -246,23 +245,25 @@
         
               <div>
                 
-  <div class="section" id="foundations-of-data-science">
-<h1>Foundations of Data Science<a class="headerlink" href="#foundations-of-data-science" title="Permalink to this headline">¶</a></h1>
-<p><strong>By Multiverse Data Fellowship Team</strong></p>
+  <div class="section" id="data-techbook">
+<h1>Data Techbook<a class="headerlink" href="#data-techbook" title="Permalink to this headline">¶</a></h1>
+<p><strong>By Greg Simon, Harry Gulliver, Eduardo Salazar, Ashray Shetty</strong></p>
 <p>This is the start of a book for Data Science Intensive (DSI) Bootcamp provided as part of Level 4 Data Analyst Apprenticeship at Multiverse.</p>
 <p>DSI prepares you for real world data analysis. In theory, drawing conclusions from data is simple - load a data table, make a plot, and fit a model. In reality however, its not that simple. Data is messy and individual circumstances and business use cases vary, which means thats the work of a data scientist is not just restricited to learning new skills but figuring out how to apply them in different circumstances. This book attempts to address this issue, but providing a collection of tutorials and real life examples in an interactive environment to allow readers to test out their learning.</p>
-<p>Here are some of the objectives we cover:</p>
+<p>Here are some of the objectives we cover are essential concepts of:</p>
 <ul class="simple">
-<li><p><strong>Learn essential concepts of statistics and probability</strong></p></li>
-<li><p><strong>Learn essential concepts of software and computing</strong></p></li>
-<li><p><strong>Learn essential concepts of Machine Learning</strong></p></li>
-<li><p><strong>Learn essential concepts of data science</strong></p></li>
-<li><p><strong>Learn essential concepts to apply data science for different contexts</strong></p></li>
-<li><p><strong>Covers case studies of real world apprentices and their application</strong></p></li>
+<li><p><strong>Statistics and Probability</strong></p></li>
+<li><p><strong>Software and Computing</strong></p></li>
+<li><p><strong>Machine Learning</strong></p></li>
+<li><p><strong>Data Science</strong></p></li>
+<li><p><strong>Apply data science for different contexts</strong></p></li>
+<li><p><strong>Covers case studies and applications</strong></p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Please note that the class website is under active development, and content will be added throughout the duration of the course.</p>
+<p>Please note that this website is under active development, and content will be added throughout the duration of the course.</p>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -274,8 +275,8 @@
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "MultiverseDF/book",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -305,9 +306,9 @@
     <div class="container">
       <p>
         
-          By Multiverse Data Coaches<br/>
+          By Data Coaches<br/>
         
-            &copy; Copyright Multiverse 2021.<br/>
+            &copy; Copyright Multiverse, 2021.<br/>
       </p>
     </div>
   </footer>
