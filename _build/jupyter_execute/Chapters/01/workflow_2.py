@@ -150,7 +150,7 @@ else:
 
 
 ```{admonition} Try yourself
-Write a program that examines three variables - $x$, $y$, and $z$ - and prints the largest even number among them. If none of them are odd, it should print the smallest value of the three.
+Write a program that examines three variables - $x$, $y$, and $z$ - and prints the largest even number among them. If none of them are even, it should print the smallest value of the three.
 ```
 
 Python also supports `conditional expressions` as well as conditional statements. They take the form

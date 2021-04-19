@@ -1,25 +1,18 @@
-# Data Techbook
+<!-- #region -->
+# Data TechBook
 
 **By Greg Simon, Harry Gulliver, Eduardo Salazar, Ashray Shetty**
 
-This is the start of a book for Data Science Intensive (DSI) Bootcamp provided as part of Level 4 Data Analyst Apprenticeship at Multiverse. 
 
-DSI prepares you for real world data analysis. In theory, drawing conclusions from data is simple - load a data table, make a plot, and fit a model. In reality however, its not that simple. Data is messy and individual circumstances and business use cases vary, which means thats the work of a data scientist is not just restricited to learning new skills but figuring out how to apply them in different circumstances. This book attempts to address this issue, but providing a collection of tutorials and real life examples in an interactive environment to allow readers to test out their learning.
-
-Here are some of the objectives we cover are essential concepts of:
-
-* **Statistics and Probability**
-
-* **Software and Computing**
-
-* **Machine Learning**
-
-* **Data Science**
-
-* **Apply data science for different contexts**
-
-* **Covers case studies and applications**
-
-```{warning} Please note that this website is under active development, and content will be added throughout the duration of the course.
+```{warning} Please do not share this with apprentices
 ```
 
+This book is written for coaches, with the intended purpose of allowing coaches to learn and work on upskilling your technical skills during independent learning time. You can also search the book if you are only interested to look at specific topic. Since its meant for coaches we take the liberty of going over slightly more advanced concepts which may not be covered with apprentices. This book will cover topics across six sections:
+
+- **Installation of differnt softwares** (covering how to deal with technical issues)
+- **Programming in Python**
+- **Working with relational Databases**
+- **Data Visualization**
+- **Statistics and Probabilities**
+- **Machine Learning**
+<!-- #endregion -->

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.3. Sequence Types &#8212; Data Techbook</title>
+    <title>1.3. Visualizing Branching Programs &#8212; Data TechBook</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -61,7 +61,7 @@
     <link rel="shortcut icon" href="../../_static/multi-logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. Generalizing from Data" href="../02/design_intro.html" />
+    <link rel="next" title="2. Sequence Type and Methods" href="../02/Sequence%20Type%20and%20Methods.html" />
     <link rel="prev" title="1.2. Branching Programs" href="workflow_2.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -84,7 +84,7 @@
   <img src="../../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Data Techbook</h1>
+  <h1 class="site-logo" id="site-title">Data TechBook</h1>
   
 </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -95,7 +95,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../intro.html">
-   Data Techbook
+   Data TechBook
   </a>
  </li>
 </ul>
@@ -105,11 +105,6 @@
  </span>
 </p>
 <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../preface.html">
-   To the Reader
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../Request%20changes.html">
    Request Changes
@@ -123,7 +118,7 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
-  The Data Science Lifecycle
+  Programming using Python
  </span>
 </p>
 <ul class="current nav sidenav_l1">
@@ -144,7 +139,36 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     1.3. Sequence Types
+     1.3. Visualizing Branching Programs
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../02/Sequence%20Type%20and%20Methods.html">
+   2. Sequence Type and Methods
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/Strings.html">
+     2.1. Strings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/Lists%20and%20Tuples.html">
+     2.2. Lists and Tuples
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/Mutability.html">
+     2.3. Mutability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/Dictionaries%20and%20Sets.html">
+     2.4. Dictionaries and Sets
     </a>
    </li>
   </ul>
@@ -152,25 +176,35 @@
   </i>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02/design_intro.html">
-   2. Generalizing from Data
+  <a class="reference internal" href="../03/Functions%20and%20Loops.html">
+   3. Functions and Loops
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../03/cycle_case_study.html">
-   3. [under development] Case Study
+  <a class="reference internal" href="../04/Introduction%20to%20NumPy.html">
+   4. Introduction to NumPy
   </a>
  </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
-  The Data Visulalization
+  Working with Rectangular Data
  </span>
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../04/plotly.html">
-   1. Exploring Data Using Plotly Express and Graph Objects
+  <a class="reference internal" href="../05/Introduction%20to%20Pandas.html">
+   1. Introduction to Pandas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06/EDA%20using%20Pandas.html">
+   2. EDA using Pandas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../07/Relational%20Databases%20and%20SQL.html">
+   3. Relational Databases and SQL
   </a>
  </li>
 </ul>
@@ -266,15 +300,28 @@
         
               <div>
                 
-  <div class="section" id="sequence-types">
-<h1><span class="section-number">1.3. </span>Sequence Types<a class="headerlink" href="#sequence-types" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-</pre></div>
+  <div class="section" id="visualizing-branching-programs">
+<h1><span class="section-number">1.3. </span>Visualizing Branching Programs<a class="headerlink" href="#visualizing-branching-programs" title="Permalink to this headline">¶</a></h1>
+<p>In the preceding section we saw how conditional statements (<code class="docutils literal notranslate"><span class="pre">if..elif...else</span> <span class="pre">statements</span></code>) help us control the flow of our code. We can have as many conditional statements as we like, but only the condition that evaluates as True will get executed. We can see how the computer performs the execution of code in the visulization below. You can click on next to see the changes that take place inside the machine’s memory while executing the code.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="100%"
+    height="500"
+    src="https://pythontutor.com/iframe-embed.html#code=x%2C%20y%2C%20z%20%3D%2010%2C%2042%2C%2084%0A%0Ax%20%3D%20y%20if%20y%20%3E%20z%20else%20z%0A%0Aif%20x%25y%20%3D%3D%200%3A%0A%20%20%20%20if%20x%20%3D%3D%20y%3A%0A%20%20%20%20%20%20%20%20print%28%27x%20is%20same%20as%20y%27%29%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20print%28%27x%20is%20divisible%20by%20y%27%29%0Aelse%3A%0A%20%20%20%20print%28%27x%20is%20not%20divisible%20by%20y%27%29%0Aprint%28float%28x%29%29%0Ax%20%3D%20float%28x%29%0Aprint%28%27Done%20with%20code%27%29%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&textReferences=false&py=3&rawInputLstJSON=%5B%5D&curInstr=0&codeDivWidth=350&codeDivHeight=400"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We haven’t spoken about frames in Python, but we will encounter them when we talk about functions, we will use this visualization in future as we encounter more sophisticated programming concepts and objects in later chapters.</p>
 </div>
-</div>
+<p>We can see that even though there are 12 lines of code the computer performs the execution of code in 8 steps. In the first step it assigns the values to the variables we specified, and then changes the value of <span class="math notranslate nohighlight">\(x\)</span> based on the condition we specified in the second line of code. We can see how the computer jumps straight to the else code block when it encounters that the <code class="docutils literal notranslate"><span class="pre">if</span></code> condition is found to be false. It then prints the output and comes out of the entire <code class="docutils literal notranslate"><span class="pre">if...else</span></code> code block and moves on to line 12.</p>
+<p>Another point to note is that when the code at <code class="docutils literal notranslate"><span class="pre">print(float(x))</span></code> is executed, it changes the value of <span class="math notranslate nohighlight">\(x\)</span> to a floating point number and prints its output, but there is no change in the actual value of variable <span class="math notranslate nohighlight">\(x\)</span> in computer’s memory. The only time the actual value of the variable changes is when we specify them explicity (which we do in code line 13).</p>
+<p>Conditionals allow us to write programs that are more interesting than straight-line programs, but this class of branching programs is still quite limited. There is very little we can do with conditions and numeric data type, in order to construct more complex programs we will look at <code class="docutils literal notranslate"><span class="pre">sequence</span> <span class="pre">type</span></code> objects. They open up the option to construct another important programming language concept, <strong>iteration</strong>.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -303,7 +350,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="workflow_2.html" title="previous page"><span class="section-number">1.2. </span>Branching Programs</a>
-    <a class='right-next' id="next-link" href="../02/design_intro.html" title="next page"><span class="section-number">2. </span>Generalizing from Data</a>
+    <a class='right-next' id="next-link" href="../02/Sequence%20Type%20and%20Methods.html" title="next page"><span class="section-number">2. </span>Sequence Type and Methods</a>
 
         </div>
         

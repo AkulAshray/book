@@ -8,7 +8,6 @@
 
 - part: Frontmatter
   chapters:
-    - file: preface
     - file: Request changes
     - file: Python editor
 
@@ -26,19 +25,13 @@
         - file: Chapters/02/Strings
         - file: Chapters/02/Lists and Tuples
         - file: Chapters/02/Mutability
-        - file: chapters/02/Dictionaries and Sets
-        
+        - file: Chapters/02/Dictionaries and Sets
+
     - file: Chapters/03/Functions and Loops
-      sections:
-       - file: Chapters/03/Loops in Python
-       - file: Chapters/03/Functions
-       - file: Chapters/03/Error Handling
-       - file: Chapter/03/Modules and Files
+   
 
     - file: Chapters/04/Introduction to NumPy
-      sections:
-       - file: Chapters/04/What are Arrays
-       - file: Chapters/04/Useful NumPy Functions
+ 
 
 - part: Working with Rectangular Data
   numbered: true
@@ -48,6 +41,10 @@
     - file: Chapters/06/EDA using Pandas
 
     - file: Chapters/07/Relational Databases and SQL
+      
+   
+        
+
       
    
 

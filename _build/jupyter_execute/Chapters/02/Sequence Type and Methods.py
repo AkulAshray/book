@@ -9,5 +9,5 @@
 Strings
 Lists and Tuples
 Mutability
-../../chapters/02/Dictionaries and Sets
+Dictionaries and Sets
 ```
