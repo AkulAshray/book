@@ -1,4 +1,7 @@
-# Sequence Type and Methods
+# Sequence Types and Methods
+
+
+
 
 
 ```{toctree}
