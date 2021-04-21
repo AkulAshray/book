@@ -4,7 +4,7 @@ One of the most basic feature of `Python` is that it is a [**Object-oriented pro
 
 A **variable** is a just name that refers to a value, it gives us a way to associate names with objects. In mathematics and statistics, we usually use variable names like $x$ and $y$. In Python, we can use any word as a variable name as long as it starts with a letter or an underscore. However, it should not be a [reserved word](https://docs.python.org/3.3/reference/lexical_analysis.html#keywords) in Python such as `for`, `while`, `class`, `lambda`, etc. as these words encode special functionality in Python that we don't want to overwrite!
 
-```{tip}
+```{note}
 
 Although we mentioned that a variable is just a name, its not that simple. Programming languages let us describe computations so that computers can execute them, but this does not mean only computers have to read programs. It's often best to write programs that are easy to read and an apt choice of variable names plays an important role in enhancing readability. You can read more about them [here](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be).
 
@@ -106,7 +106,7 @@ If the program then executes `radius = 14`, the name radius is rebound to a diff
 This assignment has no effect on the value to which area is bound, it will still keep denoting the object by the expression `3*(11**2)`
 ```
 
-### Arithmetic Operators
+## Arithmetic Operators
 
 The code above showed example of arithmetic operator, below is a table of the syntax for common arithmetic operations in Python:
 
@@ -168,7 +168,7 @@ We can also perform the modulo operation on objects of `float` type.
 
 50.5 % 3
 
-### None
+## None
 
 There are special object in Python that has no value, we call this type as `NoneType`. This type has only one possible value - `None`
 
