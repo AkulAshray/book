@@ -3,6 +3,7 @@ ghp-import==1.0.0
 # Need to pin this to avoid breaking change in 2.0.0
 # https://github.com/executablebooks/jupyter-book/issues/1137
 sphinx-inline-tabs
+sphinx-multitoc-numbering==0.1.1
 docopt==0.6.2
 linkify-it-py==1.0.1
 numpy
