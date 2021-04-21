@@ -4,24 +4,25 @@ One of the most basic feature of `Python` is that it is a [**Object-oriented pro
 
 A **variable** is a just name that refers to a value, it gives us a way to associate names with objects. In mathematics and statistics, we usually use variable names like $x$ and $y$. In Python, we can use any word as a variable name as long as it starts with a letter or an underscore. However, it should not be a [reserved word](https://docs.python.org/3.3/reference/lexical_analysis.html#keywords) in Python such as `for`, `while`, `class`, `lambda`, etc. as these words encode special functionality in Python that we don't want to overwrite!
 
-```{admonition} Remember
-An object can have have one, more than one, or no name assocaited with it.
+```{tip}
+
+Although we mentioned that a variable is just a name, its not that simple. Programming languages let us describe computations so that computers can execute them, but this does not mean only computers have to read programs. It's often best to write programs that are easy to read and an apt choice of variable names plays an important role in enhancing readability. You can read more about them [here](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be).
+
 ```
+
 It can be helpful to think of a variable as a box that holds some information (a single number, a vector, a string, etc). We use the **assignment operator** `=` to assign a value to a variable. An [assignment statement](https://en.wikipedia.org/wiki/Assignment_(computer_science)) associates the name to the left of the `=` symbol with the object denoted by the expression to the right of the `=` symbol. 
 
 ![](box.png)
 
 Image taken from: [medium.com](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40stevenpcurtis.sc%2Fwhat-is-a-variable-3447ac1331b9&psig=AOvVaw3YbYfgb7XFOJ_sHP5eliob&ust=1595365663851000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCMi8nrfe3OoCFQAAAAAdAAAAABAZ)
 
-Although we mentioned that a variable is just a name, its not that simple. Programming languages let us describe computations so that computers can execute them, but this does not mean only computers have to read programs. It's often best to write programs that are easy to read and an apt choice of variable names plays an important role in enhancing readability. You can read more about them [here](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be) or you can watch the video below to learn more about variables.
 
-```{tip}
-See the [Python 3 documentation](https://docs.python.org/3/library/stdtypes.html) for a summary of the standard built-in Python datatypes. In later chapters we will look into all of them as we use them to build simple programs.
-```
-
-<iframe width="516" height="315" src="https://www.youtube.com/embed/cQT33yu9pY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Common built-in Python data types
+```{admonition} Common built-in Python data types 
+---
+class: dropdown
+---
+See the [Python 3 documentation](https://docs.python.org/3/library/stdtypes.html) for a summary of the standard built-in Python datatypes (`dtype` for short). In later chapters we will look into all of them as we use them to build simple programs.
+$\qquad$
 
 | English name          | Type name  | Type Category  | Description                                   | Example                                    |
 | :-------------------- | :--------- | :------------- | :-------------------------------------------- | :----------------------------------------- |
@@ -33,8 +34,12 @@ See the [Python 3 documentation](https://docs.python.org/3/library/stdtypes.html
 | tuple                 | `tuple`    | Sequence Type  | a collection of objects - immutable & ordered | `('Thursday', 14, 4, 2021)`                 |
 | dictionary            | `dict`     | Mapping Type   | mapping of key-value pairs                    | `{'name':'Harry', 'code':007, 'credits':9}` |
 | none                  | `NoneType` | Null Object    | represents no value                           | `None`                                     |
+$\qquad$
+**This table shows some of the built-in data types in Python along with examples of using them.**
 
-### Numeric data types
+```
+
+## Numeric data types
 
 There are three distinct numeric types: `integers`, `floating point numbers`, and `complex numbers` (not covered here). We can determine the type of an object by using Python's in-built function `type()`. We can print the value of the object using another in-built function `print()`. You can find Pythons inbuilt functions [here](https://docs.python.org/3/library/functions.html). A `function` is simply a set of code lines which can take some input, do processing on it and return some output. We will learn more about functions later on, but for now...
 
@@ -143,6 +148,17 @@ type(50 // 3)
 We call this the `integer division` because its like calling the `int` function on the result of the division.
 
 int(50 // 3)
+
+```{admonition} Check this video to learn more about casting shown in previous example
+---
+class: hint, dropdown
+---
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ALvbltAPOcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+```
+
 
 The `%` is called the `"modulo"` operator and this gives us the remainder after doing the division. In case you are wondering how its spelled, we call the below operation as `50 mod 3`
 

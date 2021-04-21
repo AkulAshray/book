@@ -13,7 +13,7 @@ We assume no prior knowledge of Python, but experience with programming concepts
 Python is a **general purpose, interpreted, high-level programming language** that we can use effectively to build almost any kind of program that does not need direct access to the computer's hardware. 
  
 ```{tip}
-In this book, we use `Python`, however, this book is not meant to be about Python. It will certainly help us learn Python, and that's a good thing. But....what is much more important is that we will learn how to write programs that solve problems. Once we figure that out then we can transfer our skill to any programming language.
+In this website, we use `Python`, however, this book is not meant to be about Python. It will certainly help us learn Python, and that's a good thing. But what we would like to focus on is how to write programs that solve problems. Once we figure that out then we can transfer our skill to any programming language.
 ```
 
 Programming can dramatically improve our ability to collect and analyze information about the world, which in turn can lead to discoveries. In data science, the purpose of writing a program is to instruct a computer to carry out the steps of an analysis. Computers cannot study the world on their own, people must describe precisely what steps the computer should take in order to collect and analyze data, and those steps are expressed through programs. 

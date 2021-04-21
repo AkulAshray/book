@@ -1,5 +1,4 @@
-# Sequence Types and Methods
-
+# Sequence, Loops and Methods
 
 
 
