@@ -5,8 +5,11 @@
 #   title: Data TechBook
 - file: intro
   title: Introduction
-- file: Request changes
-- file: Python editor
+
+- part: Frontmatter
+  chapters:
+    - file: Request changes
+    - file: Python editor
 
 - part: Programming using Python
   numbered: true
