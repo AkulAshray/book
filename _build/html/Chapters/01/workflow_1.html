@@ -310,8 +310,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#strings">
+   1.1.3. Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#none">
-   1.1.3. None
+   1.1.4. None
   </a>
  </li>
 </ul>
@@ -328,14 +333,17 @@
                 
   <div class="section" id="basic-python-data-types">
 <h1><span class="section-number">1.1. </span>Basic Python Data Types<a class="headerlink" href="#basic-python-data-types" title="Permalink to this headline">¶</a></h1>
-<p>One of the most basic feature of <code class="docutils literal notranslate"><span class="pre">Python</span></code> is that it is a <a class="reference external" href="https://en.wikipedia.org/wiki/Object-oriented_programming"><strong>Object-oriented programming language</strong></a>, which means everything inside <code class="docutils literal notranslate"><span class="pre">Python</span></code> is an <strong>object</strong>. When we write programs, we essentially specify a set of actions to perform that manipuates the <strong>object</strong> in some capacity. Sometimes we even call the object as <code class="docutils literal notranslate"><span class="pre">value</span></code>, and each value is a piece of data that a computer program works with such as a number or text. There are different <strong>types</strong> of values: <code class="docutils literal notranslate"><span class="pre">42</span></code> is an integer and <code class="docutils literal notranslate"><span class="pre">&quot;Hello!&quot;</span></code> is a string.</p>
+<p>One of the most basic feature of Python is that it is a <a class="reference external" href="https://en.wikipedia.org/wiki/Object-oriented_programming"><strong>Object-oriented programming language</strong></a>, which means everything inside Python is an <strong>object</strong>. When we write programs, we essentially specify a set of actions to perform that manipuates the <strong>object</strong> in some capacity. Sometimes we even call the object as <code class="docutils literal notranslate"><span class="pre">value</span></code>, and each value is a piece of data that a computer program works with such as a number or text. There are different <strong>types</strong> of values: 42 is an integer and “Hello!” is a string.</p>
 <p>A <strong>variable</strong> is a just name that refers to a value, it gives us a way to associate names with objects. In mathematics and statistics, we usually use variable names like <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>. In Python, we can use any word as a variable name as long as it starts with a letter or an underscore. However, it should not be a <a class="reference external" href="https://docs.python.org/3.3/reference/lexical_analysis.html#keywords">reserved word</a> in Python such as <code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">while</span></code>, <code class="docutils literal notranslate"><span class="pre">class</span></code>, <code class="docutils literal notranslate"><span class="pre">lambda</span></code>, etc. as these words encode special functionality in Python that we don’t want to overwrite!</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Although we mentioned that a variable is just a name, its not that simple. Programming languages let us describe computations so that computers can execute them, but this does not mean only computers have to read programs. It’s often best to write programs that are easy to read and an apt choice of variable names plays an important role in enhancing readability. You can read more about them <a class="reference external" href="https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be">here</a>.</p>
 </div>
-<p>It can be helpful to think of a variable as a box that holds some information (a single number, a vector, a string, etc). We use the <strong>assignment operator</strong> <code class="docutils literal notranslate"><span class="pre">=</span></code> to assign a value to a variable. An <a class="reference external" href="https://en.wikipedia.org/wiki/Assignment_(computer_science)">assignment statement</a> associates the name to the left of the <code class="docutils literal notranslate"><span class="pre">=</span></code> symbol with the object denoted by the expression to the right of the <code class="docutils literal notranslate"><span class="pre">=</span></code> symbol.</p>
-<p><img alt="" src="../../_images/box.png" /></p>
+<p>It can be helpful to think of a variable as a box that holds some information (a single number, a vector, a string, etc). We use the <strong>assignment operator</strong> <code class="docutils literal notranslate"><span class="pre">=</span></code> to assign a value to a variable. An <a class="reference external" href="https://en.wikipedia.org/wiki/Assignment_(computer_science)">assignment statement</a> associates the name to the left of the = symbol with the object denoted by the expression to the right of the = symbol.</p>
+<div class="figure align-default" id="variables">
+<a class="reference internal image-reference" href="../../_images/box.png"><img alt="Python Variables." src="../../_images/box.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1.1 </span><span class="caption-text">Python Variables.</span><a class="headerlink" href="#variables" title="Permalink to this image">¶</a></p>
+</div>
 <p>Image taken from: <a class="reference external" href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fmedium.com%2F%40stevenpcurtis.sc%2Fwhat-is-a-variable-3447ac1331b9&amp;psig=AOvVaw3YbYfgb7XFOJ_sHP5eliob&amp;ust=1595365663851000&amp;source=images&amp;cd=vfe&amp;ved=0CA0QjhxqFwoTCMi8nrfe3OoCFQAAAAAdAAAAABAZ">medium.com</a></p>
 <div class="dropdown admonition">
 <p class="admonition-title">Common built-in Python data types</p>
@@ -406,7 +414,7 @@
 </div>
 <div class="section" id="numeric-data-types">
 <h2><span class="section-number">1.1.1. </span>Numeric data types<a class="headerlink" href="#numeric-data-types" title="Permalink to this headline">¶</a></h2>
-<p>There are three distinct numeric types: <code class="docutils literal notranslate"><span class="pre">integers</span></code>, <code class="docutils literal notranslate"><span class="pre">floating</span> <span class="pre">point</span> <span class="pre">numbers</span></code>, and <code class="docutils literal notranslate"><span class="pre">complex</span> <span class="pre">numbers</span></code> (not covered here). We can determine the type of an object by using Python’s in-built function <code class="docutils literal notranslate"><span class="pre">type()</span></code>. We can print the value of the object using another in-built function <code class="docutils literal notranslate"><span class="pre">print()</span></code>. You can find Pythons inbuilt functions <a class="reference external" href="https://docs.python.org/3/library/functions.html">here</a>. A <code class="docutils literal notranslate"><span class="pre">function</span></code> is simply a set of code lines which can take some input, do processing on it and return some output. We will learn more about functions later on, but for now…</p>
+<p>There are three distinct numeric types: <strong>integers, floating point numbers</strong>, and <strong>complex numbers</strong> (not covered here). We can determine the type of an object by using Python’s in-built function <code class="docutils literal notranslate"><span class="pre">type()</span></code>. We can print the value of the object using another in-built function <code class="docutils literal notranslate"><span class="pre">print()</span></code>. You can find Pythons inbuilt functions <a class="reference external" href="https://docs.python.org/3/library/functions.html">here</a>. A <a class="reference external" href="https://www.w3schools.com/python/python_functions.asp">function</a> is simply a set of code lines which can take some input, do processing on it and return some output. We will learn more about functions later on, but for now…</p>
 <p>Let’s create a variable named x that stores the integer 7, which is the variable’s value:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -421,7 +429,7 @@
 </div>
 </div>
 </div>
-<p>The snippet <strong>x=7</strong> is a <code class="docutils literal notranslate"><span class="pre">statement</span></code>. Each statement specifies a task to perform. The preceding statement creates <strong>x</strong> and uses the <code class="docutils literal notranslate"><span class="pre">assignment</span> <span class="pre">symbol</span></code> <strong>(=)</strong> to give <strong>x</strong> a value. The entire statement is an assignment variable that we read as “x is assigned the value 7”. The following statement creates a variable y and assigns to it the value 42. We will even use the print() function to see what its value is:</p>
+<p>The snippet <strong><span class="math notranslate nohighlight">\(x\)</span>=7</strong> is a statement. Each statement specifies a task to perform. The preceding statement creates <strong><span class="math notranslate nohighlight">\(x\)</span></strong> and uses the <code class="docutils literal notranslate"><span class="pre">assignment</span> <span class="pre">symbol</span></code> <strong>(=)</strong> to give <strong><span class="math notranslate nohighlight">\(x\)</span></strong> a value. The entire statement is an assignment variable that we read as “x is assigned the value 7”. The following statement creates a variable <span class="math notranslate nohighlight">\(y\)</span> and assigns to it the value 42. We will even use the print() function to see what its value is:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">42</span>
@@ -435,7 +443,7 @@
 </div>
 </div>
 </div>
-<p>In Jupyter/IPython (an interactive version of Python, based on which this book was written), the last line of a cell will automatically return as an output and so we don’t actually need to explicitly state <code class="docutils literal notranslate"><span class="pre">print()</span></code>.</p>
+<p>In Jupyter/IPython (an interactive version of Python, through which this content was written), the last line of a cell will automatically return as an output and so we don’t actually need to explicitly state print().</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="c1"># Anything after the pound/hash symbol is a comment and will not be run</span>
@@ -487,9 +495,12 @@
 </pre></div>
 </div>
 </div>
-<p>The code first <code class="docutils literal notranslate"><span class="pre">binds</span></code> the names <strong>pi</strong> and <strong>radius</strong> to different objects of type <code class="docutils literal notranslate"><span class="pre">int</span></code>. It then binds the name <strong>area</strong> to a third object of type <code class="docutils literal notranslate"><span class="pre">int</span></code>. This is depicted on the left side of figure below.</p>
-<p><img alt="" src="../../_images/binding.png" /></p>
-<p>If the program then executes <code class="docutils literal notranslate"><span class="pre">radius</span> <span class="pre">=</span> <span class="pre">14</span></code>, the name radius is rebound to a different object of type <code class="docutils literal notranslate"><span class="pre">int</span></code> as shown on the right side.</p>
+<p>The code first <code class="docutils literal notranslate"><span class="pre">binds</span></code> the names <strong>pi</strong> and <strong>radius</strong> to different objects of type int. It then binds the name <strong>area</strong> to a third object of type int. This is depicted on the left side of figure below.</p>
+<div class="figure align-default" id="variable-assignment">
+<a class="reference internal image-reference" href="../../_images/binding.png"><img alt="Variable Assignment." src="../../_images/binding.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1.2 </span><span class="caption-text">Variable Assignment.</span><a class="headerlink" href="#variable-assignment" title="Permalink to this image">¶</a></p>
+</div>
+<p>If the program then executes <strong>radius = 14</strong>, the name radius is rebound to a different object of type int as shown on the right side.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This assignment has no effect on the value to which area is bound, it will still keep denoting the object by the expression <code class="docutils literal notranslate"><span class="pre">3*(11**2)</span></code></p>
@@ -567,7 +578,7 @@
 </div>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p>Division may produce a differnt <code class="docutils literal notranslate"><span class="pre">dtype</span></code> than expected, it will change <code class="docutils literal notranslate"><span class="pre">int</span></code> to <code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+<p>Division may produce a differnt dtype than expected, it will change int to float</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -594,7 +605,7 @@
 </div>
 </div>
 </div>
-<p>When we use the syntax <code class="docutils literal notranslate"><span class="pre">//</span></code>, it allows us to do “integer division” and retain the <code class="docutils literal notranslate"><span class="pre">int</span></code> data type. It gives us the quotient after division.</p>
+<p>When we use the syntax <code class="docutils literal notranslate"><span class="pre">//</span></code>, it allows us to do “integer division” and retain the int data type. It gives us the quotient after division.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">50</span> <span class="o">/</span> <span class="mi">3</span>
@@ -631,7 +642,7 @@
 </div>
 </div>
 </div>
-<p>We call this the <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">division</span></code> because its like calling the <code class="docutils literal notranslate"><span class="pre">int</span></code> function on the result of the division.</p>
+<p>We call this the <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">division</span></code> because its like calling the int function on the result of the division.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="mi">50</span> <span class="o">//</span> <span class="mi">3</span><span class="p">)</span>
@@ -644,8 +655,8 @@
 </div>
 </div>
 </div>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Check this video to learn more about casting shown in previous example</p>
+<div class="hint dropdown seealso admonition">
+<p class="admonition-title">Watch this video to learn more about casting shown in previous example</p>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/ALvbltAPOcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">%</span></code> is called the <code class="docutils literal notranslate"><span class="pre">&quot;modulo&quot;</span></code> operator and this gives us the remainder after doing the division. In case you are wondering how its spelled, we call the below operation as <code class="docutils literal notranslate"><span class="pre">50</span> <span class="pre">mod</span> <span class="pre">3</span></code></p>
@@ -675,8 +686,108 @@
 </div>
 </div>
 </div>
+<div class="section" id="strings">
+<h2><span class="section-number">1.1.3. </span>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h2>
+<p>Much of data is not stored in the form of numbers, but as text, which is represented in a computer in the form of a string. We can think of string as a sequence of characters, that can represent a word, a sentence, or even the contents of every book in a library.</p>
+<p>We write strings as characters enclosed with either:</p>
+<ul class="simple">
+<li><p>single quotes, e.g., <code class="docutils literal notranslate"><span class="pre">'Data'</span></code></p></li>
+<li><p>double quotes, e.g., <code class="docutils literal notranslate"><span class="pre">&quot;Science&quot;</span></code></p></li>
+</ul>
+<p>There is no difference between the two methods, but there are some cases where it’s useful to have them both.</p>
+<p>We can even add two strings together and the result will also be a string, for instance, adding two strings together produces another string. This expression is still an addition expression, but it is combining a different type of value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;Data&#39;</span> <span class="o">+</span> <span class="s2">&quot;Science&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;DataScience&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>The addition operator + is said to be <strong>overloaded</strong> as it carries different meaning depending on the type of object it works on. When its used on numeric type it means addition, but when used for strings it means concantenation. In the above example it combines these two strings without regard for their contents. It doesn’t add a space because these are different words; that’s up to the programmer (you) to specify. We can add space between words by using an empty string with space.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;Data&#39;</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="s1">&#39;Science&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Data Science&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Everything enclosed inside triple quotes is considered to be a multi-line</span>
+<span class="sd">comment and will not be executed</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="s1">&#39;Python&#39;</span> <span class="o">+</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">2573</span><span class="n">cb83bf00</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">comment</span> <span class="ow">and</span> <span class="n">will</span> <span class="ow">not</span> <span class="n">be</span> <span class="n">executed</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">----&gt; </span><span class="mi">5</span><span class="s2"> &#39;Python&#39; + 3</span>
+
+<span class="ne">TypeError</span>: can only concatenate str (not &quot;int&quot;) to str
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We cannot concatenate an integer to string, we will first need to cast the integer into a string by using str() or enclosing the integer inside quotes, for example,</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&#39;Python&#39; + str(3) 
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&#39;Python&#39; + &#39;3&#39;
+</pre></div>
+</div>
+</div>
+<p>Double-quoted strings could be useful in certain situations like</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;I can&#39;t use single-quoted strings here&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;I can&#39;t use single-quoted strings here&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">quote</span> <span class="o">=</span> <span class="s1">&#39;Tony Stark: &quot;I am Iron Man.&quot;&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">quote</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">quote</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tony Stark: &quot;I am Iron Man.&quot;
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>str
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 <div class="section" id="none">
-<h2><span class="section-number">1.1.3. </span>None<a class="headerlink" href="#none" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.1.4. </span>None<a class="headerlink" href="#none" title="Permalink to this headline">¶</a></h2>
 <p>There are special object in Python that has no value, we call this type as <code class="docutils literal notranslate"><span class="pre">NoneType</span></code>. This type has only one possible value - <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

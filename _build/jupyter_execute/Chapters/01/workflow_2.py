@@ -9,7 +9,15 @@ The kinds of computations we have been looking at so far are called `straight-li
 
 After a conditional statement is executed, execution resumes at the code followiing the statement
 
-![](ifelse3.png)
+```{figure} ifelse.png
+---
+height: 300px
+name: Branching Programs
+alt: Control Flow.
+---
+Branching Program Flowchart.
+```
+
 
 ## Boolean
 
