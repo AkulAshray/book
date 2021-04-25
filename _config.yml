@@ -45,7 +45,7 @@ html:
   comments:
     utterances:
       repo: "github-org/github-repo"          
-
+    hypothesis: true
 
 repository:
   url: https://github.com/MultiverseDF/book                    

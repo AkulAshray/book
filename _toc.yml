@@ -6,7 +6,7 @@
 - file: intro
   title: Introduction
 
-- part: Frontmatter
+- part:
   chapters:
     - file: Request changes
     - file: Python editor
