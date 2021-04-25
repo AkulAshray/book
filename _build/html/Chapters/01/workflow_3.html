@@ -47,6 +47,40 @@
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/tabs.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "github-org/github-repo");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
@@ -59,7 +93,7 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="shortcut icon" href="../../_static/multi-logo.png"/>
+    <link rel="shortcut icon" href="../../_static/Multiverse_Symbol.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="2. Sequence, Loops and Methods" href="../02/Sequence%20Type%20and%20Methods.html" />
@@ -82,7 +116,7 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="../../index.html">
   
-  <img src="../../_static/logo.png" class="logo" alt="logo">
+  <img src="../../_static/Multiverse_Symbol.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">Data TechBook</h1>
@@ -323,7 +357,16 @@
 <p>We can see that even though there are 12 lines of code the computer performs the execution of code in 8 steps. In the first step it assigns the values to the variables we specified, and then changes the value of <span class="math notranslate nohighlight">\(x\)</span> based on the condition we specified in the second line of code. We can see how the computer jumps straight to the else code block when it encounters that the <code class="docutils literal notranslate"><span class="pre">if</span></code> condition is found to be false. It then prints the output and comes out of the entire <code class="docutils literal notranslate"><span class="pre">if...else</span></code> code block and moves on to line 12.</p>
 <p>Another point to note is that when the code at <code class="docutils literal notranslate"><span class="pre">print(float(x))</span></code> is executed, it changes the value of <span class="math notranslate nohighlight">\(x\)</span> to a floating point number and prints its output, but there is no change in the actual value of variable <span class="math notranslate nohighlight">\(x\)</span> in computer’s memory. The only time the actual value of the variable changes is when we specify them explicity (which we do in code line 13).</p>
 <p>Conditionals allow us to write programs that are more interesting than straight-line programs, but this class of branching programs is still quite limited. There is very little we can do with conditions and numeric data type, in order to construct more complex programs we will look at <code class="docutils literal notranslate"><span class="pre">sequence</span> <span class="pre">type</span></code> objects. They open up the option to construct another important programming language concept, <strong>iteration</strong>.</p>
-</div>
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="MultiverseDF/book"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/></div>
 
     <script type="text/x-thebe-config">
     {

@@ -32,3 +32,18 @@ Another point to note is that when the code at `print(float(x))` is executed, it
 
 Conditionals allow us to write programs that are more interesting than straight-line programs, but this class of branching programs is still quite limited. There is very little we can do with conditions and numeric data type, in order to construct more complex programs we will look at `sequence type` objects. They open up the option to construct another important programming language concept, **iteration**.
 
+
+
+```{raw} html
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="MultiverseDF/book"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>
+```
+
