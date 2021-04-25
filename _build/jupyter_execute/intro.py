@@ -12,7 +12,6 @@ alt: Data Science
 **DIKW Pyramid**
 ```
 
-## Structure of the book
 We will cover topics across six sections and also add exercises and sample problems to work on:
 
 - **Installation of different softwares** (covering how to deal with technical issues)
@@ -22,5 +21,41 @@ We will cover topics across six sections and also add exercises and sample probl
 - **Statistics and Probabilities**
 - **Machine Learning**
 
+
 ```{note} Please do not share this website with apprentices
+```
+
+
+```{toctree}
+:hidden:
+:titlesonly:
+
+
+Request changes
+Python editor
+```
+
+
+```{toctree}
+:hidden:
+:titlesonly:
+:numbered: True
+:caption: Programming using Python
+
+Chapters/01/Workflow_intro
+Chapters/02/Sequence Type and Methods
+Chapters/03/Functions and Loops
+Chapters/04/Introduction to NumPy
+```
+
+
+```{toctree}
+:hidden:
+:titlesonly:
+:numbered: True
+:caption: Working with Rectangular Data
+
+Chapters/05/Introduction to Pandas
+Chapters/06/EDA using Pandas
+Chapters/07/Relational Databases and SQL
 ```

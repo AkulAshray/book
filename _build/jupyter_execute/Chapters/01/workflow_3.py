@@ -1,4 +1,5 @@
 # Visualizing Branching Programs
+<hr style="height:1px;border:none;color:#666;background-color:#666;" />
 
 In the preceding section we saw how conditional statements (`if..elif...else statements`) help us control the flow of our code. We can have as many conditional statements as we like, but only the condition that evaluates as True will get executed. We can see how the computer performs the execution of code in the visulization below. You can click on next to see the changes that take place inside the machine's memory while executing the code. 
 
@@ -46,4 +47,3 @@ Conditionals allow us to write programs that are more interesting than straight-
    crossorigin="anonymous"
 />
 ```
-

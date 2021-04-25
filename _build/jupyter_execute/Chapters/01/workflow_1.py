@@ -1,4 +1,5 @@
 # Basic Python Data Types
+<hr style="height:1px;border:none;color:#666;background-color:#666;" />
 
 One of the most basic feature of Python is that it is a [**Object-oriented programming language**](https://en.wikipedia.org/wiki/Object-oriented_programming), which means everything inside Python is an **object**. When we write programs, we essentially specify a set of actions to perform that manipuates the **object** in some capacity. Sometimes we even call the object as `value`, and each value is a piece of data that a computer program works with such as a number or text. There are different **types** of values: 42 is an integer and "Hello!" is a string. 
 
@@ -163,9 +164,13 @@ We call this the `integer division` because its like calling the int function on
 
 int(50 // 3)
 
-```{admonition} Watch this video to learn more about casting shown in previous example
+```{margin}
+Watch the following video to learn more about Casting
+```
+
+```{admonition} **Casting in Python**
 ---
-class: hint, dropdown, seealso
+class: dropdown
 ---
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/ALvbltAPOcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

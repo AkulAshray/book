@@ -47,6 +47,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script src="_static/tabs.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -276,9 +277,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/intro.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -296,6 +297,26 @@ commentsRunWhenDOMLoaded(addUtterances);
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/MultiverseDF/book/main?urlpath=tree/./intro.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -309,23 +330,26 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <!-- #region -->
-<div class="section" id="df-technical-guide">
+  <div class="section" id="df-technical-guide">
 <h1>DF Technical Guide<a class="headerlink" href="#df-technical-guide" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Please do not share this with apprentices</p>
+<hr style="height:1px;border:none;color:#666;background-color:#666;" /><p>This website is for coaches, with the intended purpose of allowing coaches and associates to learn and work on upskilling their technical skills during independent learning time. You can also search this website if you are only interested to look at specific topic. Since its meant for coaches we take the liberty of going over slightly more advanced concepts which may not be covered with apprentices!!</p>
+<div class="figure align-default" id="data-science">
+<a class="reference internal image-reference" href="_images/datascience.jpg"><img alt="Data Science" src="_images/datascience.jpg" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text"><strong>DIKW Pyramid</strong></span><a class="headerlink" href="#data-science" title="Permalink to this image">¶</a></p>
 </div>
-<p>This website is for coaches, with the intended purpose of allowing coaches and associates to learn and work on upskilling their technical skills during independent learning time. You can also search this website if you are only interested to look at specific topic. Since its meant for coaches we take the liberty of going over slightly more advanced concepts which may not be covered with apprentices. This website will cover topics across six sections:</p>
+<p>We will cover topics across six sections and also add exercises and sample problems to work on:</p>
 <ul class="simple">
-<li><p><strong>Installation of differnt softwares</strong> (covering how to deal with technical issues)</p></li>
+<li><p><strong>Installation of different softwares</strong> (covering how to deal with technical issues)</p></li>
 <li><p><strong>Programming in Python</strong></p></li>
 <li><p><strong>Working with relational Databases</strong></p></li>
 <li><p><strong>Data Visualization</strong></p></li>
 <li><p><strong>Statistics and Probabilities</strong></p></li>
 <li><p><strong>Machine Learning</strong></p></li>
 </ul>
-<!-- #endregion -->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please do not share this website with apprentices</p>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">

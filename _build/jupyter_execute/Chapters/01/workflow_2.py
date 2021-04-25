@@ -1,4 +1,5 @@
 # Branching Programs
+<hr style="height:1px;border:none;color:#666;background-color:#666;" />
 
 The kinds of computations we have been looking at so far are called `straight-line programs`. This means they execute code one statement at a time, one after another, in the order in which they appear and stop when they run out of statements to execute. We can't really describe anything interesting with straight-line programs, as they can be downright boring.
 
@@ -17,7 +18,6 @@ alt: Control Flow.
 ---
 Branching Program Flowchart.
 ```
-
 
 ## Boolean
 
