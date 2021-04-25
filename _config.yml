@@ -1,7 +1,7 @@
 title: Data TechBook
 author: Data Coaches
 copyright: Multiverse, 2021
-logo: logo.png
+logo: multi-logo.png
 
 execute:
   execute_notebooks: 'off'
