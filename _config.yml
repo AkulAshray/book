@@ -1,7 +1,7 @@
 title: Data TechBook
 author: Data Coaches
 copyright: Multiverse, 2021
-logo: multi-logo.png
+logo: Multiverse_Symbol.png
 
 execute:
   execute_notebooks: 'off'
@@ -36,7 +36,7 @@ launch_buttons:
   thebe                  : true
 
 html:
-  favicon: multi-logo.png
+  favicon: Multiverse_Symbol.png
   navbar_footer_text: Visit our <a href="https://www.multiverse.io/en-GB">main
     website</a>
 
