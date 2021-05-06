@@ -1,7 +1,7 @@
-title: Data TechBook
-author: Data Coaches
-copyright: Multiverse, 2021
-logo: Multiverse_Symbol.png
+title: Data Science using Python
+author: Ashray Shetty
+copyright: "2021"
+logo: DC-2.png
 
 execute:
   execute_notebooks: 'off'
@@ -36,9 +36,8 @@ launch_buttons:
   thebe                  : true
 
 html:
-  favicon: Multiverse_Symbol.png
-  navbar_footer_text: Visit our <a href="https://www.multiverse.io/en-GB">main
-    website</a>
+  favicon: DC-2.png
+  navbar_footer_text: Visit our <a href="https://github.com/MultiverseDF/book">repository</a>
 
   use_repository_button: false       
   use_issues_button: false

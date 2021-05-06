@@ -1,46 +1,31 @@
 
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-# - url: multiverse.io
-#   title: Data TechBook
+# - url: ashrayshetty.netlify.app
+#   title: Data Circle
 - file: intro
   title: Introduction
 
 - part:
   chapters:
-    - file: Request changes
     - file: Python editor
 
 - part: Programming using Python
-  numbered: true
+  numbered: false
   chapters:
     - file: Chapters/01/Workflow_intro
       sections:
         - file: Chapters/01/workflow_1
         - file: Chapters/01/workflow_2
         - file: Chapters/01/workflow_3
-
-    - file: Chapters/02/Sequence Type and Methods
+    - file: Chapters/02/Sequence, Loops and Methods
       sections:
-        - file: Chapters/02/Strings
-        - file: Chapters/02/Lists and Tuples
-        - file: Chapters/02/Mutability
-        - file: Chapters/02/Dictionaries and Sets
-
-    - file: Chapters/03/Functions and Loops
-   
-
-    - file: Chapters/04/Introduction to NumPy
+        - file: Chapters/02/String Methods
+        - file: Chapters/02/List and Tuples
+        - file: Chapters/02/Loops
+    - file: Chapters/02/Exercise 01
+    - file: Chapters/02/Solutions 01
  
-
-- part: Working with Rectangular Data
-  numbered: true
-  chapters:
-    - file: Chapters/05/Introduction to Pandas
-
-    - file: Chapters/06/EDA using Pandas
-
-    - file: Chapters/07/Relational Databases and SQL
       
    
         

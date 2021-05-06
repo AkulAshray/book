@@ -172,10 +172,7 @@ Watch the following video to learn more about Casting
 ---
 class: dropdown
 ---
-
 <iframe width="640" height="360" src="https://www.youtube.com/embed/ALvbltAPOcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 ```
 
 

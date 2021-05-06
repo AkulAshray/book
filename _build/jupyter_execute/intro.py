@@ -1,7 +1,11 @@
-# DF Technical Guide
+# Data Science
 <hr style="height:1px;border:none;color:#666;background-color:#666;" />
 
-This website is for coaches, with the intended purpose of allowing coaches and associates to learn and work on upskilling their technical skills during independent learning time. You can also search this website if you are only interested to look at specific topic. Since its meant for coaches we take the liberty of going over slightly more advanced concepts which may not be covered with apprentices!!
+```{admonition} Welcome!
+The goal of this website is to teach python programming and machine learning, even without a strong technical background.
+```
+
+With this website I aim to provide an introduction to everything you need to know to start using Python for data science. I am hoping it will act as a codebook, where you can execute the code and make notes on the website. We’ll cover topics such as basic programming, using libraries like Pandas and Matplotlib for data exploration and visualization and topics on Machine Learning.
 
 ```{figure} datascience.jpg
 ---
@@ -12,18 +16,7 @@ alt: Data Science
 **DIKW Pyramid**
 ```
 
-We will cover topics across six sections and also add exercises and sample problems to work on:
 
-- **Installation of different softwares** (covering how to deal with technical issues)
-- **Programming in Python**
-- **Working with relational Databases**
-- **Data Visualization**
-- **Statistics and Probabilities**
-- **Machine Learning**
-
-
-```{note} Please do not share this website with apprentices
-```
 
 
 ```{toctree}
@@ -31,7 +24,6 @@ We will cover topics across six sections and also add exercises and sample probl
 :titlesonly:
 
 
-Request changes
 Python editor
 ```
 
@@ -39,23 +31,10 @@ Python editor
 ```{toctree}
 :hidden:
 :titlesonly:
-:numbered: True
 :caption: Programming using Python
 
 Chapters/01/Workflow_intro
-Chapters/02/Sequence Type and Methods
-Chapters/03/Functions and Loops
-Chapters/04/Introduction to NumPy
-```
-
-
-```{toctree}
-:hidden:
-:titlesonly:
-:numbered: True
-:caption: Working with Rectangular Data
-
-Chapters/05/Introduction to Pandas
-Chapters/06/EDA using Pandas
-Chapters/07/Relational Databases and SQL
+Chapters/02/Sequence, Loops and Methods
+Chapters/02/Exercise 01
+Chapters/02/Solutions 01
 ```
