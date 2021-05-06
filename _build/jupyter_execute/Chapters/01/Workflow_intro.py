@@ -1,4 +1,4 @@
-# Introduction to Python
+# 1. Introduction to Python
 <hr style="height:1px;border:none;color:#666;background-color:#666;" />
 
 In this section we introduce Python programming and present examples illustrating key language features. We can learn the syntax of `Python` in a few days, but learning to use a language is more than just learning the syntax. Building a pool of experience that lets us be an efficient programmer is usually tough -- as it requires working on good quality exercises for months, but it is doable and certainly very useful. 

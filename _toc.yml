@@ -23,8 +23,10 @@
         - file: Chapters/02/String Methods
         - file: Chapters/02/List and Tuples
         - file: Chapters/02/Loops
+    - file: Chapters/03/Dictionaries and Comprehensions
     - file: Chapters/02/Exercise 01
     - file: Chapters/02/Solutions 01
+    - file: Chapters/03/Functions and Exceptions
  
       
    

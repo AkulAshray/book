@@ -35,6 +35,8 @@ Python editor
 
 Chapters/01/Workflow_intro
 Chapters/02/Sequence, Loops and Methods
+Chapters/03/Dictionaries and Comprehensions
 Chapters/02/Exercise 01
 Chapters/02/Solutions 01
+Chapters/03/Functions and Exceptions
 ```
