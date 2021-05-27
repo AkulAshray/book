@@ -877,7 +877,91 @@ You can use `pd.concat()` to stick dataframes together:
 </div>
 </div>
 </div>
-<p><img alt="" src="../../_images/join.png" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>alignment</th>
+      <th>gender</th>
+      <th>publisher</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Magneto</td>
+      <td>bad</td>
+      <td>male</td>
+      <td>Marvel</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Storm</td>
+      <td>good</td>
+      <td>female</td>
+      <td>Marvel</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mystique</td>
+      <td>bad</td>
+      <td>female</td>
+      <td>Marvel</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Batman</td>
+      <td>good</td>
+      <td>male</td>
+      <td>DC</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Joker</td>
+      <td>bad</td>
+      <td>male</td>
+      <td>DC</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Catwoman</td>
+      <td>bad</td>
+      <td>female</td>
+      <td>DC</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Hellboy</td>
+      <td>good</td>
+      <td>male</td>
+      <td>Dark Horse Comics</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
 <p>An “inner” join will return all rows of <code class="docutils literal notranslate"><span class="pre">df1</span></code> where matching values for “publisher” are found in <code class="docutils literal notranslate"><span class="pre">df2</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1067,7 +1151,6 @@ You can use `pd.concat()` to stick dataframes together:
 </table>
 </div></div></div>
 </div>
-<p><img alt="" src="../../_images/outer_join.png" /></p>
 <p>Return all rows from <code class="docutils literal notranslate"><span class="pre">df1</span></code> and all columns of <code class="docutils literal notranslate"><span class="pre">df1</span></code> and <code class="docutils literal notranslate"><span class="pre">df2</span></code>, populated where matches occur:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
