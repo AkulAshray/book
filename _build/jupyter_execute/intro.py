@@ -40,3 +40,15 @@ Chapters/02/Exercise 01
 Chapters/02/Solutions 01
 Chapters/03/Functions and Exceptions
 ```
+
+
+```{toctree}
+:hidden:
+:titlesonly:
+:caption: Data Wrangling using Python
+
+Chapters/04/NumPy
+Chapters/04/Pandas Intro
+Chapters/05/sql intro
+Chapters/06/viz intro
+```

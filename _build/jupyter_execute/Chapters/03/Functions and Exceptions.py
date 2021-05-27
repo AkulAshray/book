@@ -130,3 +130,93 @@ SyntaxError: positional argument follows keyword argument
 
 ```
 ````
+
+
+### Multiple Return Values
+
+In many programming languages, functions can only return one object. That is technically true in Python too, but there is a "workaround", which is to return a tuple.
+
+def sum_and_product(x, y):
+    return (x + y, x * y)
+
+sum_and_product(5, 6)
+
+The parentheses can be omitted (and often are), and a `tuple` is implicitly returned as defined by the use of the comma: 
+
+def sum_and_product(x, y):
+    return x + y, x * y
+
+sum_and_product(5, 6)
+
+It is common to immediately unpack a returned tuple into separate variables, so it really feels like the function is returning multiple values:
+
+summed, product = sum_and_product(5, 6)
+
+summed
+
+product
+
+### Functions with Arbitrary Number of Arguments
+
+You can also call/define functions that accept an arbitrary number of positional or keyword arguments using `*args` and `**kwargs`.
+
+def add(*args):
+    print(args)
+    return sum(args)
+
+add(1, 2, 3, 4, 5, 6)
+
+def add(**kwargs):
+    print(kwargs)
+    return sum(kwargs.values())
+
+add(a=3, b=4, c=5)
+
+## Functions as  a Data Type
+
+In Python, functions are actually a data type:
+
+def doubles(x):
+    return x + x
+
+type(doubles)
+
+print(doubles)
+
+This means you can pass functions as arguments into other functions.
+
+def say_hi(default_greet = 'Hi'):
+    return default_greet
+
+def greet_person(function, name):
+    return function() + f' {name}'
+
+greet_person(say_hi, 'Bruce')
+
+So what happened above?
+- `function()` becomes `say_hi()`
+
+## Anonymous Functions
+There are two ways to define functions in Python. The way we've beenusing up until now:
+
+def doubles(x):
+    return x + x
+
+Or by using the `lambda` keyword:
+
+lambda_doubles = lambda x: x + x
+
+type(lambda_doubles)
+
+lambda_doubles(8)
+
+The two approaches above are identical. The one with `lambda` is called an **anonymous function**. Anonymous functions can only take up one line of code, so they aren't appropriate in most cases, but can be useful for smaller things.
+
+
+```{toctree}
+:hidden:
+:titlesonly:
+
+
+Exceptions
+```
