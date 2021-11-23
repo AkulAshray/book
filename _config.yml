@@ -50,7 +50,7 @@ html:
 
 
 repository:
-  url: https://github.com/AkulAshray/book                    
+  url: https://github.com/webookdata/book                    
   path_to_book: .                  
   branch: main
 
