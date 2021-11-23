@@ -32,7 +32,7 @@ sphinx:
     - sphinx-prompt
 
 launch_buttons:
-  notebook_interface: "classic"  # or "jupyterlab"
+  #notebook_interface: "classic"  # or "jupyterlab"
   thebe                  : true
 
 html:
@@ -47,7 +47,7 @@ html:
     hypothesis: true
 
 repository:
-  url: https://github.com/MultiverseDF/book                    
+  url: https://github.com/AkulAshray/book                    
   path_to_book: .                  
   branch: main
 
