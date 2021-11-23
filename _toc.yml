@@ -13,44 +13,9 @@
 - part: Programming using Python
   numbered: false
   chapters:
-    - file: Chapters/01/Workflow_intro
-      sections:
-        - file: Chapters/01/workflow_1
-        - file: Chapters/01/workflow_2
-        - file: Chapters/01/workflow_3
-    - file: Chapters/02/Sequence, Loops and Methods
-      sections:
-        - file: Chapters/02/String Methods
-        - file: Chapters/02/List and Tuples
-        - file: Chapters/02/Loops
-    - file: Chapters/03/Dictionaries and Comprehensions
-    - file: Chapters/02/Exercise 01
-    - file: Chapters/02/Solutions 01
-    - file: Chapters/03/Functions and Exceptions
-      sections:
-        - file: Chapters/03/Exceptions
-- part: Data Wrangling using Python
-  numbered: false
-  chapters:
-    - file: Chapters/04/NumPy
-    - file: Chapters/04/Pandas Intro
-      sections:
-        - file: Chapters/04/Introduction to Pandas
-        - file: Chapters/04/Pandas grouping and pivoting
-        - file: Chapters/04/Pandas apply strings and plotting
-        - file: Chapters/04/Merge and Concat Dataset
-    - file: Chapters/05/sql intro
-      sections:
-        - file: Chapters/05/sql rdbms
-        - file: Chapters/05/sql basics
-        - file: Chapters/05/sql joins
-    - file: Chapters/06/viz intro
-      sections:
-        - file: Chapters/06/viz quantitative
-        - file: Chapters/06/viz qualitative
-        - file: Chapters/06/viz matplotlib
-      
-   
+    - file: Chapters/Exercise 01
+    - file: Chapters/Solutions 01
+
         
 
       
