@@ -42,6 +42,7 @@ html:
 
   use_repository_button: false       
   use_issues_button: false
+  show_prev_next: False
   #comments:
     #utterances:
       #repo: "github-org/github-repo"          
