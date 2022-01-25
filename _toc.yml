@@ -13,8 +13,13 @@
 - part: Programming using Python
   numbered: false
   chapters:
+    - file: Chapters/01/intro_python
+    - file: Chapters/02/Sequence, Loops and Methods
+    - file: Chapters/03/Dictionaries and Comprehensions
+    - file: Chapters/03/Functions and Exceptions
     - file: Chapters/Exercise 01
     - file: Chapters/Solutions 01
+
 
         
 

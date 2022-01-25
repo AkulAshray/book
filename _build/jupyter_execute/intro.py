@@ -33,6 +33,10 @@ Python editor
 :titlesonly:
 :caption: Programming using Python
 
+Chapters/01/intro_python
+Chapters/02/Sequence, Loops and Methods
+Chapters/03/Dictionaries and Comprehensions
+Chapters/03/Functions and Exceptions
 Chapters/Exercise 01
 Chapters/Solutions 01
 ```

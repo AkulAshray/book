@@ -47,6 +47,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -58,7 +60,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="📃 Solution for Exercise 01" href="Solutions%2001.html" />
-    <link rel="prev" title="Python Editor" href="../Python%20editor.html" />
+    <link rel="prev" title="Functions and Exceptions" href="03/Functions%20and%20Exceptions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -108,6 +110,26 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01/intro_python.html">
+   Introduction to Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02/Sequence%2C%20Loops%20and%20Methods.html">
+   Sequence, Loops and Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03/Dictionaries%20and%20Comprehensions.html">
+   Dictionaries and Comprehensions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03/Functions%20and%20Exceptions.html">
+   Functions and Exceptions
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    📝 Exercise 01
@@ -184,7 +206,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/AkulAshray/book/main?urlpath=tree/./Chapters/Exercise 01.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/webookdata/book/main?urlpath=tree/./Chapters/Exercise 01.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -440,7 +462,7 @@
     {
         requestKernel: true,
         binderOptions: {
-            repo: "AkulAshray/book",
+            repo: "webookdata/book",
             ref: "main",
         },
         codeMirrorConfig: {
@@ -466,11 +488,11 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="../Python%20editor.html" title="previous page">
+        <a class="left-prev" href="03/Functions%20and%20Exceptions.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Python Editor</p>
+                <p class="prevnext-title">Functions and Exceptions</p>
             </div>
         </a>
     </div>
