@@ -38,7 +38,7 @@ launch_buttons:
 
 html:
   favicon: DC-2.png
-  navbar_footer_text: Visit our <a href="https://github.com/MultiverseDF/book">repository</a>
+  navbar_footer_text: Visit our <a href="https://github.com/AkulAshray/book">repository</a>
 
   use_repository_button: false       
   use_issues_button: false
@@ -50,7 +50,7 @@ html:
 
 
 repository:
-  url: https://github.com/webookdata/book                    
+  url: https://github.com/AkulAshray/book                    
   path_to_book: .                  
   branch: main
 
