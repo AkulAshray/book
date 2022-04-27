@@ -1,7 +1,7 @@
 
 # Table of contents new
 # Learn more at https://jupyterbook.org/customize/toc.html
-#   title: Data Circle
+#   title: Data Science Using Python
 - file: intro
   title: Introduction
 
@@ -19,6 +19,16 @@
     - file: Chapters/Exercise 01
     - file: Chapters/Solutions 01
 
+- part: Data Wrangling with Python
+  numbered: false
+  chapters:
+    - file: Chapters/04/NumPy
+    - file: Chapters/04/Pandas Intro
+    - file: Chapters/04/Pandas grouping and pivoting
+    - file: Chapters/04/Merge and Concat Dataset
+    - file: Chapters/04/Pandas apply strings and plotting
+    - file: Chapters/05/sql intro
+    - file: Chapters/06/viz intro
 
         
 

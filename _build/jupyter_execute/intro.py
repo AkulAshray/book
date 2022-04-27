@@ -40,3 +40,18 @@ Chapters/03/Functions and Exceptions
 Chapters/Exercise 01
 Chapters/Solutions 01
 ```
+
+
+```{toctree}
+:hidden:
+:titlesonly:
+:caption: Data Wrangling with Python
+
+Chapters/04/NumPy
+Chapters/04/Pandas Intro
+Chapters/04/Pandas grouping and pivoting
+Chapters/04/Merge and Concat Dataset
+Chapters/04/Pandas apply strings and plotting
+Chapters/05/sql intro
+Chapters/06/viz intro
+```
