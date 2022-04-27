@@ -16,3 +16,4 @@ matplotlib
 scikit-learn
 ipywidgets
 plotly
+jinja2==3.0.0
